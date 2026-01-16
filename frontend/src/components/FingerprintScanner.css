@@ -1,0 +1,117 @@
+.fingerprint-scanner-container {
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fingerprint-canvas {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.fingerprint-instructions {
+  margin: 20px 0;
+}
+
+.fingerprint-instructions p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.fingerprint-instructions p.hint {
+  color: #999;
+  font-size: 12px;
+}
+
+.btn-scan-fingerprint {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-scan-fingerprint:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-scan-fingerprint:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.scanning-indicator {
+  margin-top: 20px;
+}
+
+.scanner-pulse {
+  width: 60px;
+  height: 60px;
+  background: #667eea;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scanning-indicator p {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.success-message {
+  padding: 20px;
+  background: #d4edda;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.success-text {
+  color: #155724;
+  margin: 0;
+  font-weight: 600;
+}
+
+.btn-retake-scan {
+  padding: 12px 30px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-retake-scan:hover {
+  background: #e68900;
+}
