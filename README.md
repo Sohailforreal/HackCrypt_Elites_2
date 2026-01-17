@@ -1,4 +1,4 @@
-# QSpiders Student Portal - Full-Stack Web Application
+# Intelligent Attandance System
 
 A modern, responsive student portal application built with React + Vite (frontend) and FastAPI + SQLAlchemy (backend). This learning management system enables students to manage courses, track attendance, and monitor their academic progress.
 
